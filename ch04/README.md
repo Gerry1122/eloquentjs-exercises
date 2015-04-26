@@ -35,3 +35,11 @@ A nice thing about lists is that they can share parts of their structure. For ex
 Write a function arrayToList that builds up a data structure like the previous one when given [1, 2, 3] as argument, and write a listToArray function that produces an array from a list. Also write the helper functions prepend, which takes an element and a list and creates a new list that adds the element to the front of the input list, and nth, which takes a list and a number and returns the element at the given position in the list, or undefined when there is no such element.
 
 If you haven’t already, also write a recursive version of nth.
+
+**Exercise 04 - **
+
+The == operator compares objects by identity. But sometimes, you would prefer to compare the values of their actual properties.
+
+Write a function, deepEqual, that takes two values and returns true only if they are the same value or are objects with the same properties whose values are also equal when compared with a recursive call to deepEqual.
+
+To find out whether to compare two things by identity (use the === operator for that) or by looking at their properties, you can use the typeof operator. If it produces "object" for both values, you should do a deep comparison. But you have to take one silly exception into account: by a historical accident, typeof null also produces "object".
